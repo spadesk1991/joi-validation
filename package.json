@@ -1,0 +1,27 @@
+{
+  "name": "joi-validation",
+  "version": "1.0.0",
+  "description": "joi validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spadesk1991/joi-validation.git"
+  },
+  "keywords": [
+    "joi",
+    "validator"
+  ],
+  "author": "spadesk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spadesk1991/joi-validation/issues"
+  },
+  "homepage": "https://github.com/spadesk1991/joi-validation#readme",
+  "dependencies": {
+    "joi": "^13.6.0",
+    "lodash": "^4.17.11"
+  }
+}
