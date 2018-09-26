@@ -77,7 +77,7 @@ function validation(ctx, schema) {
                     return [3 /*break*/, 4];
                 case 3:
                     error_1 = _a.sent();
-                    ctx.throw(406, { message: error_1.datils.map(function (d) { return "[" + d.path + ":" + d.message + "]"; }).join(" ") });
+                    ctx.throw(406, { message: error_1.details.map(function (d) { return " [" + d.path + ":" + d.message; }).join("] ") });
                     return [3 /*break*/, 4];
                 case 4: return [2 /*return*/];
             }

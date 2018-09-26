@@ -25,7 +25,7 @@ export async function validation(ctx: any, schema: Object) {
       joi.extend(_.get(ctx, (mappings[k] || k) || {}), newCtx[k]);
     });
   } catch (error) {
-    ctx.throw(406, { message: error.datils.map((d: any) => `[${d.path}:${d.message}]`).join(" ") });
+    ctx.throw(406, { message: error.details.map((d: any) => ` [${d.path}:${d.message}`).join("] ") });
   }
 }
 
