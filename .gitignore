@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+index.d.ts
+index.js.map
+index.js
