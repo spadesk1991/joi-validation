@@ -1,6 +1,6 @@
 {
   "name": "joi-validation",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "joi validator",
   "main": "index.js",
   "types": "./index.d.ts",
@@ -23,12 +23,9 @@
   "homepage": "https://github.com/spadesk1991/joi-validation#readme",
   "dependencies": {
     "joi": "^13.6.0",
-    "lodash": "^4.17.11"
-  },
-  "devDependencies": {
+    "lodash": "^4.17.11",
     "@types/joi": "^13.4.5",
-    "@types/lodash": "^4.14.116",
-    "install": "^0.12.1",
-    "npm": "^6.4.1"
-  }
+    "@types/lodash": "^4.14.116"
+  },
+  "devDependencies": {}
 }

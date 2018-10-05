@@ -34,7 +34,7 @@ async function validation(ctx, schema) {
         });
     }
     catch (error) {
-        ctx.throw(406, { message: error.details.map((d) => ` [${d.path}:${d.message}`).join("] ") });
+        ctx.throw(406, { message: error.details.map((d) => ` [${d.path}:${d.message}]`).join(" ") });
     }
 }
 exports.validation = validation;
