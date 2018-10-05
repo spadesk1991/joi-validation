@@ -5,8 +5,10 @@ interface AnyObject {
   [propName: string]: any
 }
 
+export { joi, validation, _ }
 
-export async function validation(ctx: any, schema: Object) {
+
+async function validation(ctx: any, schema: Object) {
   const pickedCtx: AnyObject = {};
   const mappings: AnyObject = {
     query: "request.query",
@@ -22,12 +24,13 @@ export async function validation(ctx: any, schema: Object) {
       allowUnknown: true
     });
     Object.keys(newCtx).forEach(k => {
-      joi.extend(_.get(ctx, (mappings[k] || k) || {}), newCtx[k]);
+      _.extend(_.get(ctx, (mappings[k] || k) || {}), newCtx[k]);
     });
   } catch (error) {
     ctx.throw(406, { message: error.details.map((d: any) => ` [${d.path}:${d.message}`).join("] ") });
   }
 }
+
 
 
 
